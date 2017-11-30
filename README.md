@@ -1,8 +1,8 @@
-# Sonobuoy bulkhead plugin
+# Sonobuoy "bulkhead" plugin
 
-This [Sonobuoy](https://github.com/heptio/sonobuoy) plugin performs automated CIS Benchmark assessments by using [kube-bench](https://github.com/aquasecurity/kube-bench) and outputs those results in the native ```kube-bench``` json format.
+This [Sonobuoy](https://github.com/heptio/sonobuoy) plugin, ```bulkhead``` performs automated CIS Benchmark assessments against your Kubernetes cluster master and worker nodes by using [kube-bench](https://github.com/aquasecurity/kube-bench) and outputs those results in the native ```kube-bench``` json format.
 
-*NOTE*: This plugin was not officially created by either [Heptio](https://heptio.com) or [Aqua Security](https://aquasecurity.com).  It is in *very* early stages.
+*NOTE*: This plugin was not officially created by either [Heptio](https://heptio.com) or [Aqua Security](https://aquasecurity.com).  It is also in the *very* early stages.
 
 ## Quick usage
 
@@ -15,5 +15,5 @@ This [Sonobuoy](https://github.com/heptio/sonobuoy) plugin performs automated CI
 6. View the results: ```cd results && tar -zxvf *.tar.gz && cd plugins/bulkhead```
 7. Clean up: ```kubectl delete -f examples/benchmark.yml``` (This removes all scan data, too)
 
-# TODO
+## TODO
 - Work on a Sonobuoy results parser
